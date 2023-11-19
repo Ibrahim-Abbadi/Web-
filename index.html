@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI and Data Sciences Today</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add ChartJS library here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>AI and Data Sciences Today</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="intro-section">
+        <div class="intro-content">
+            <img src="DS_image.jpg" alt="AI and Data Sciences" class="intro-image">
+            <div class="intro-text">
+                <h1>Welcome to AI and Data Sciences Today</h1>
+                <p>Discover the latest advancements in AI and Data Sciences and stay ahead in the digital world.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="chart-section">
+        <h1>Trends in Data Sciences</h1>
+        <canvas id="myChart" width="300" height="100"></canvas>
+    </section>
+
+    <section class="articles-section">
+        <h1>Featured Articles</h1>
+        <div class="article-card">
+            <img src="AI_healthcare.jpg" alt="Article 1">
+            <h2>Unlocking the Power of AI in Healthcare</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">Read more</a>
+        </div>
+
+        <div class="article-card">
+            <img src="AI_Energy.jpg" alt="Article 2">
+            <h2>Data Science for Sustainable Energy</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">Read more</a>
+        </div>
+
+        <div class="article-card">
+            <img src="E-learning.jpg" alt="Article 3">
+            <h2>The Future of AI-Driven Education</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">Read more</a>
+        </div>
+    </section>
+
+    <section class="additional-section">
+        <h1>Stay Informed</h1>
+        <p>Subscribe to our newsletter for the latest updates in AI and Data Sciences.</p>
+        <button class="cta-button">Subscribe Now</button>
+    </section>
+
+    <section class="about-section">
+        <div class="about-content">
+            <h1>About Us</h1>
+            <p>We are passionate about AI and Data Sciences and aim to provide valuable insights to our readers.</p>
+        </div>
+    </section>
+
+    <section class="more-articles-section">
+        <h1>More Articles</h1>
+        <div class="article-card">
+            <img src="AI_Business.jpg" alt="Article 4">
+            <h2>AI in Business: Driving Efficiency and Innovation</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">Read more</a>
+        </div>
+
+        <div class="article-card">
+            <img src="BigData.jpg" alt="Article 5">
+            <h2>Big Data Analytics: Uncovering Hidden Insights</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">Read more</a>
+        </div>
+
+        <div class="article-card">
+            <img src="AI_Finance.jpg" alt="Article 6">
+            <h2>The Role of Machine Learning in Finance</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">Read more</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023 AI and Data Sciences Today</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for ChartJS -->
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May'],
+                datasets: [{
+                    label: 'Monthly Data',
+                    data: [12, 19, 3, 5, 2],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.5)',
+                        'rgba(54, 162, 235, 0.5)',
+                        'rgba(255, 206, 86, 0.5)',
+                        'rgba(75, 192, 192, 0.5)',
+                        'rgba(153, 102, 255, 0.5)',
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                    ],
+                    borderWidth: 1,
+                }],
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                    },
+                },
+            },
+        });
+    </script>
+</body>
+</html>

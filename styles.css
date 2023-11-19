@@ -1,0 +1,162 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define general styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header Styles */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #007BFF, #00BFFF); /* Background gradient */
+    color: #fff;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold; /* Make navigation links bold */
+}
+
+/* Introduction Section Styles */
+.intro-section {
+    padding: 20px;
+    background-color: #fff; /* Add a background color */
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+}
+
+.intro-image {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+}
+
+.intro-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Chart Section Styles */
+.chart-section {
+    padding: 20px;
+    background: linear-gradient(to right, #f5f5f5, #e0e0e0); /* Background gradient */
+}
+
+.chart-section h1 {
+    font-size: 28px; /* Larger font size */
+    margin-bottom: 20px;
+    font-weight: bold; /* Bold text */
+}
+
+/* Featured Articles Section Styles */
+.articles-section {
+    text-align: center; /* Center-align the content within the section */
+}
+
+.articles-section h1 {
+    font-size: 32px; /* Larger font size */
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.article-card {
+    display: flex; /* Use flex display for proper alignment */
+    flex-direction: column; /* Stack elements vertically within each card */
+    justify-content: center; /* Vertically center the content within each card */
+    align-items: center; /* Horizontally center the content within each card */
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    margin: 20px; /* Add margin around each article card */
+}
+
+/* Remove margin for the first article card to prevent extra spacing on the left */
+.article-card:first-child {
+    margin-left: 0;
+}
+
+/* Ensure all images within article cards have the same dimensions */
+.article-card img {
+    max-width: 100%;
+    height: auto;
+    width: 100%; /* Ensure all images take up the full width of the card */
+    border-radius: 5px;
+}
+
+/* Additional Section Styles */
+.additional-section {
+    background-color: #fff;
+    text-align: center;
+    padding: 40px; /* Increased padding */
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 15px 30px; /* Larger button size */
+    font-size: 18px; /* Larger font size */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* About Us Section Styles */
+.about-section {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-content h1 {
+    font-size: 28px; /* Larger font size */
+    margin-right: 20px;
+}
+
+/* More Articles Section Styles */
+.more-articles-section {
+    background: linear-gradient(to right, #f9f9f9, #e0e0e0); /* Background gradient */
+    padding: 40px; /* Increased padding */
+}
+
+.more-articles-section h1 {
+    font-size: 32px; /* Larger font size */
+    margin-bottom: 30px; /* Increased margin */
+}
+
+/* Footer Section Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container p {
+    font-size: 14px;
+}
+
+/* Add any additional styles as needed */
